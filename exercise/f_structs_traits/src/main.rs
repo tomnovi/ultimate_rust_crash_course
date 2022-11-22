@@ -16,8 +16,7 @@ trait Bite{
 // need a hint, look at how it was done for Carrot at the bottom of this file (you should probably
 // use a different field, though).
 //
-// #[derive(Debug)] // include this line right before your struct definition
-// struct Grapes...
+#[derive(Debug)] // include this line right before your struct definition
 struct Grapes {
     number_left: u32,
 }
@@ -69,7 +68,7 @@ fn main() {
     println!("Bunny nibbles for awhile: {:?}", carrot);
 
     bunny_nibbles(&mut grapes);
-    println!("Bunny nibbles for awhile on grapes {}", grapes.number_left);
+    println!("Bunny nibbles for awhile on grapes {:?}", grapes);
 
 }
 
