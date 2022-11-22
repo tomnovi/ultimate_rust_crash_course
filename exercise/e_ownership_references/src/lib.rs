@@ -10,14 +10,12 @@ pub fn change(str: &mut String){
     if !str.ends_with("s") {str.push_str("s")}
 }
 
-pub fn eat(str: String) -> bool{
-    let check;
+pub fn eat(str: String) -> bool {
     if str.starts_with("b") && str.contains("a") {
-        check = true;
+        true
     } else {
-        check = false;
-    };
-    check
+        false
+    }
 }
 
 pub fn bedazzle(str: &mut String) {
