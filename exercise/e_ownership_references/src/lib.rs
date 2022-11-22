@@ -16,5 +16,5 @@ pub fn eat(str: String) -> bool {
 
 pub fn bedazzle(str: &mut String) {
     (*str) = "sparkly".to_string();
-    // (*str) = String.from("sparkly");
+    // (*str) = String::from("sparkly");
 }
